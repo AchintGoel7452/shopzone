@@ -1,0 +1,119 @@
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --secondary: #f59e0b;
+  --success: #10b981;
+  --danger: #ef4444;
+  --dark: #111827;
+  --gray: #6b7280;
+  --light: #f9fafb;
+  --border: #e5e7eb;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f9fafb;
+  color: #111827;
+}
+
+h1, h2, h3, h4, h5 { font-family: 'Poppins', sans-serif; }
+
+.btn-primary { background: var(--primary); border-color: var(--primary); }
+.btn-primary:hover { background: var(--primary-dark); border-color: var(--primary-dark); }
+
+.text-primary { color: var(--primary) !important; }
+.bg-primary { background-color: var(--primary) !important; }
+
+/* Product Card */
+.product-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(37,99,235,0.12);
+}
+
+.product-img {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+  background: #f3f4f6;
+}
+
+.product-img-placeholder {
+  height: 220px;
+  background: linear-gradient(135deg, #e0e7ff 0%, #dbeafe 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+.badge-discount {
+  background: var(--danger);
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* Navbar */
+.navbar-brand { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.5rem; }
+
+/* Hero */
+.hero-section {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+  color: white;
+  padding: 100px 0;
+}
+
+/* Seller Sidebar */
+.seller-sidebar {
+  min-height: calc(100vh - 56px);
+  background: #1f2937;
+  color: white;
+}
+.seller-sidebar .nav-link { color: #d1d5db; padding: 12px 20px; }
+.seller-sidebar .nav-link:hover, .seller-sidebar .nav-link.active {
+  background: #374151; color: white;
+}
+
+/* Forms */
+.form-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 2rem;
+}
+
+/* Rating Stars */
+.stars { color: #f59e0b; }
+
+/* Cart Badge */
+.cart-badge {
+  position: absolute;
+  top: -6px; right: -8px;
+  background: var(--danger);
+  color: white;
+  border-radius: 50%;
+  width: 18px; height: 18px;
+  font-size: 0.65rem;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.section-subtitle {
+  color: var(--gray);
+  margin-bottom: 2rem;
+}
